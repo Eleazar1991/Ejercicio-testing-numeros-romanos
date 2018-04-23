@@ -32,6 +32,11 @@ function convertToRomanNumber(map,value,romanNumber){
         value-=1000;
         return convertToRomanNumber(map,value,romanNumber);
     }
+    if(value>=900){
+        romanNumber+=map['900']
+        value-=900;
+        return convertToRomanNumber(map,value,romanNumber);
+    }
     if(value>=500){
         romanNumber+=map['500']
         value-=500;

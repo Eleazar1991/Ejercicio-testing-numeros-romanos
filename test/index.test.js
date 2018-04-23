@@ -28,5 +28,8 @@ describe('roman numbers should', () => {
     test('return MCD  if number is 1400', () => {
         expect(romanNumbers(1400)).toBe('MCD');
     })
+    test('return MCMXLV  if number is 1945', () => {
+        expect(romanNumbers(1945)).toBe('MCMXLV');
+    })
 
 })
